@@ -9,7 +9,9 @@ public class ArraysSorting {
         int b=5;
         int c=a+b;
         System.out.println("a + b is "+ c);
+        System.out.println("Output is"+ c);
         //testing 1
+        
 
 
 

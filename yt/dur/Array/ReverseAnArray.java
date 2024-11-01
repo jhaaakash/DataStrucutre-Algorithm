@@ -10,7 +10,7 @@ public class ReverseAnArray {
         int temp=0;
         int right= numbers.length-1;
         while (left<right) {
-           temp= numbers[left];
+            temp= numbers[left];
             numbers[left]=numbers[right];
             numbers[right]=temp; 
             left++;
@@ -18,7 +18,7 @@ public class ReverseAnArray {
         }
 
         for (int i : numbers) {
-            System.out.print(i);
+            System.out.print(i +" \t ");
         }
 
 

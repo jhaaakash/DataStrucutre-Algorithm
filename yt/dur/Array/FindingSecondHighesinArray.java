@@ -12,7 +12,7 @@ public class FindingSecondHighesinArray {
         for(int i=0; i<numbers.length; i++)
         {
             if(numbers[i]> largest)
-            {
+            {   secendLargest=largest;
                 largest=numbers[i];
             }
             else if(numbers[i]>secendLargest && numbers[i]<largest)
@@ -20,7 +20,7 @@ public class FindingSecondHighesinArray {
                 secendLargest=numbers[i];
             }
         }
-        System.out.println("Second largest number is" +secendLargest);
+        System.out.println("Second largest number is " +secendLargest);
 
     }
 

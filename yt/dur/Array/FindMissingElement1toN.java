@@ -5,12 +5,16 @@ import java.util.Scanner;
 public class FindMissingElement1toN {
     public static void findingMissingNumber(int number[])
     {
-        for(int i=0;i<number.length-1;i++)
-        {
-            if (number[i+1]-number[i]!=1) {
-                System.out.println("The missing element is "+ (i+2));
-            }
+        int n = number.length;
+        int expectedSum = n * (n + 1) / 2;
+        int actualSum = 0;
+
+        for (int num : number) {
+            actualSum += num;
         }
+
+        int missingNumber= expectedSum - actualSum;
+        System.out.println("The missing number is "+missingNumber);
     }
 
     public static void main(String[] args) {

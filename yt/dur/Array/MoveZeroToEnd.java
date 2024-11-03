@@ -1,7 +1,7 @@
 package yt.dur.Array;
 
 import java.util.Scanner;
-
+//IMORTANT
 public class MoveZeroToEnd {
 
     public static void moveAllZeroToEnd(int number[])

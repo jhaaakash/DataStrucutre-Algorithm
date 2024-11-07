@@ -13,7 +13,7 @@ public class LearningStream {
         System.out.println("Even Number");
         list.stream().filter(e -> e%2 ==0).collect(Collectors.toList()).forEach(System.out::print);
 
-        List<Integer> list1= Arrays.asList(1,2,3,4,5,6,7,8,9,0);  //Secind way of creating a list
+        List<Integer> list1= Arrays.asList(3,4,2,6,1,5,7,8,9,0);  //Secind way of creating a list
         //Distinct Number
         List<Integer> distinctNumber =list1.stream().distinct().collect(Collectors.toList());
         for (Integer integer : distinctNumber) {
@@ -38,7 +38,16 @@ public class LearningStream {
        for (String string : capitalName) {
         System.out.print(" " +string);
        }
+       System.out.println();
        
+       //Sort list
+       List<Integer> sortedIntegers= list1.stream().sorted().collect(Collectors.toList());
+       System.out.println("Sorted list");
+       for (Integer integer : sortedIntegers) {
+        System.out.print(integer + " ");
+       }
+
+
 
 
 

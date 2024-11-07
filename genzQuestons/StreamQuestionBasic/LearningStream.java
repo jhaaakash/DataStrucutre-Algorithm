@@ -30,6 +30,17 @@ public class LearningStream {
       System.out.println("Total of all the number is:");
       System.out.println(totalSum);
 
+      //All name to upper case:
+      System.out.println("Converting all the name to upper case");
+      List<String> names= Arrays.asList("Aakash", "Komal","Abhishek","Pooja","Dilip");
+
+       List<String> capitalName=names.stream().map(String::toUpperCase).collect(Collectors.toList());
+       for (String string : capitalName) {
+        System.out.print(" " +string);
+       }
+       
+
+
 
 
 

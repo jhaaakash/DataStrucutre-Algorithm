@@ -25,6 +25,12 @@ public class LearningStream {
         System.out.println("Maximum number is");
         System.out.println(maxNumber.get());
 
+        //sumof all element
+      int totalSum=  list.stream().mapToInt(Integer::intValue).sum();
+      System.out.println("Total of all the number is:");
+      System.out.println(totalSum);
+
+
 
 
 

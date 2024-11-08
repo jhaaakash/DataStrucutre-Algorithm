@@ -66,7 +66,10 @@ public class LearningStream {
      System.out.println("Reducing the element to sum");
      System.out.println("After reducing the list the sum we got is: " +sum);
 
-     
+     // Find Any
+      System.out.println("learning Find Any operation in java");
+     Integer findAnyResult= list1.stream().findAny().get();
+     System.out.println("The output of find any operation is " +findAnyResult);
 
 
 

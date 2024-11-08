@@ -47,9 +47,12 @@ public class LearningStream {
         System.out.print(integer + " ");
        }
 
+       //Count Elements
+       System.out.println("Display the count of the element greater than 5");
+       long countOfElement=list1.stream().filter(e -> e>5).count();
+       System.out.println("the total number of element greater than 5 is " +countOfElement);
 
-
-
+       //
 
 
 

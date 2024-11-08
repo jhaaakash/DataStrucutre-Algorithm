@@ -60,8 +60,14 @@ public class LearningStream {
       for (Integer integer : distinctNumbers) {
         System.out.print(integer+ " ");
       }
+        //*****************IMP*********************************** */
+      //Reduce to Sum 
+     Integer sum= list1.stream().reduce(0, Integer::sum);
+     System.out.println("Reducing the element to sum");
+     System.out.println("After reducing the list the sum we got is: " +sum);
 
-      
+     
+
 
 
 

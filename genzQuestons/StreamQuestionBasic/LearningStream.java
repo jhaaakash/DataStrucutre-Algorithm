@@ -71,7 +71,14 @@ public class LearningStream {
      Integer findAnyResult= list1.stream().findAny().get();
      System.out.println("The output of find any operation is " +findAnyResult);
 
-
+      //Listing First name from a list contian  fullname
+      List<String> fullnames = Arrays.asList("Aakash Jha" ,"Abhishek Jha","Komal Jha");
+      List<String> firstname=fullnames.stream().map(e -> e.split(" ")[0]).collect(Collectors.toList());
+      System.out.println("Firstname from the full name ");
+      for (String string : firstname) {
+        System.out.print(string + " ");
+      }
+      System.out.println();
 
 
 

@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class LearningStream {
     
@@ -52,7 +53,15 @@ public class LearningStream {
        long countOfElement=list1.stream().filter(e -> e>5).count();
        System.out.println("the total number of element greater than 5 is " +countOfElement);
 
-       //
+       //Getting Distinct Elements:
+       List<Integer> list3= Arrays.asList(1,1,1,2,2,2,2,3,3,3,3,6,6,6,5,5,8,8,8,9,9,0);
+      List<Integer> distinctNumbers= list3.stream().distinct().collect(Collectors.toList());
+      System.out.println("Distict element in the list3 is: ");
+      for (Integer integer : distinctNumbers) {
+        System.out.print(integer+ " ");
+      }
+
+      
 
 
 

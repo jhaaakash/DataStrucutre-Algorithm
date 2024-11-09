@@ -85,7 +85,10 @@ public class LearningStream {
       boolean allNumberGreaterThan0 = list3.stream().allMatch(e -> e >= 0);
       System.out.println(allNumberGreaterThan0);
 
-      //
+      //Learning AnyMatch in Stream
+      System.out.println("learning any Stream");
+      boolean anyNumberGreaterThan5=list3.stream().anyMatch(e ->e >5);
+      System.out.println(anyNumberGreaterThan5);
 
 
 

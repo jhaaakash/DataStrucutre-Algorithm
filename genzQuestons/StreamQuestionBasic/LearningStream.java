@@ -90,6 +90,10 @@ public class LearningStream {
       boolean anyNumberGreaterThan5=list3.stream().anyMatch(e ->e >5);
       System.out.println(anyNumberGreaterThan5);
 
+      //Learning NoneMatch in Stream
+      System.out.println("Learning NoneMatch in Stream");
+      boolean noneMatchLearning=list3.stream().noneMatch(e -> e <0);
+      System.out.println(noneMatchLearning);
 
 
 

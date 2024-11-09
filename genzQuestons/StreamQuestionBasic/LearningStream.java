@@ -80,8 +80,12 @@ public class LearningStream {
       }
       System.out.println();
 
+      //Learning use of ALL Match
+      System.out.println("Leaninng AllMatch");
+      boolean allNumberGreaterThan0 = list3.stream().allMatch(e -> e >= 0);
+      System.out.println(allNumberGreaterThan0);
 
-
+      //
 
 
 

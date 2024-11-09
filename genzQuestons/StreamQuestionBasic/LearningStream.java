@@ -1,7 +1,9 @@
 package StreamQuestionBasic;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -100,7 +102,27 @@ public class LearningStream {
      Optional<Integer> findFirstElement= list3.stream().findFirst();
      System.out.println(findFirstElement.get());
 
+     //**********************IMPORTANT*******************************/
+     //Learning FlatMap:
+     System.out.println("Learning  Flat Map in stream");
+     List<List<Integer>> nestedNumbers= Arrays.asList(Arrays.asList(1,2,3,4,5),Arrays.asList(6,7,8,9,10));
+    List<Integer> flaList= nestedNumbers.stream().flatMap(List::stream).collect(Collectors.toList());
+    for (Integer integer : flaList) {
+        System.out.print(integer+ " ");
+    }
 
+    System.out.println();
+
+    //Grouping Elements:
+    List<Student> studentList= new ArrayList<>();
+    studentList.add(new Student(1, "Aakash", 29));
+    studentList.add(new Student(2, "Abhishek", 27));
+    studentList.add(new Student(3, "Rohit", 30));
+    studentList.add(new Student(4, "Prakash", 29));
+
+    System.out.println("Learning Group by Operation");
+    Map<Integer, List<Student>> groupStudentByAge =studentList.stream().collect(Collectors.groupingBy(Student::getAge));
+    System.out.println(groupStudentByAge);
 
 
     }

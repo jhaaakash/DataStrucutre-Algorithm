@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Employee {
+public class Employee  implements Comparable<Employee>{
     private int id;
     private String name;
     private int age;
@@ -119,6 +119,24 @@ public class Employee {
         GenderWiseCountFromList object2= new GenderWiseCountFromList();
         object2.countNumberOfMaleAndFemale(empList);
 
+        //Learning Comparable vs Comparator
+        //Comparable same class, and compareto method, +,-,0
+
+      System.out.println("Soritng of element with the help of comparable");
+        Collections.sort(empList);
+        for (Employee employee : empList) {
+            System.out.println(employee);
+        }
+
+
+
+    }
+// here we have overwrite the comparable logic natually
+    @Override
+    public int compareTo(Employee o) {
+        // TODO Auto-generated method stub
+       return(this.id - o.id);
     }
 
+   
 }

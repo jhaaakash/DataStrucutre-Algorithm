@@ -95,6 +95,10 @@ public class LearningStream {
       boolean noneMatchLearning=list3.stream().noneMatch(e -> e <0);
       System.out.println(noneMatchLearning);
 
+      //Learning Find First:
+      System.out.println("learning Find First");
+     Optional<Integer> findFirstElement= list3.stream().findFirst();
+     System.out.println(findFirstElement.get());
 
 
 

@@ -127,14 +127,17 @@ public class Employee  implements Comparable<Employee>{
         for (Employee employee : empList) {
             System.out.println(employee);
         }
-
-
+        System.out.println();
+//Learning comparable as we can have multiple logic for comparision
+        Collections.sort(empList, new AgeComparator());
+        for (Employee employee : empList) {
+            System.out.println(employee);
+        }
 
     }
 // here we have overwrite the comparable logic natually
     @Override
     public int compareTo(Employee o) {
-        // TODO Auto-generated method stub
        return(this.id - o.id);
     }
 

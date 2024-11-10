@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -144,6 +145,16 @@ public class LearningStream {
       System.out.print(integer+ " ");
     }
     System.out.println();
+    //Converting any list to set
+
+    System.out.println("Converting the list to set");
+   Set<Integer> numberSet= list1.stream().collect(Collectors.toSet());
+   for (Integer integer : numberSet) {
+    System.out.print(integer+ " ");
+   }
+   System.out.println();
+
+
 
   }
 }

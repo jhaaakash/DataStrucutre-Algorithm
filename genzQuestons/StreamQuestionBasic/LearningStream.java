@@ -124,9 +124,15 @@ public class LearningStream {
     (Collectors.groupingBy(Student::getAge));
     System.out.println(groupStudentByAge);
 
-    //Peek Elements:
+    //Peek Elements:peek element of the stream during processing without altering them
     System.out.println("Using Stream Peek Operation");
     List<Integer> peekedAtNumbers=list3.stream().peek(System.out::println).collect(Collectors.toList());
 
+    //Limit Stream
+    System.out.println("Learning Stream Limit feature");
+   List<Integer> LiitedNumber= list1.stream().filter(e -> e>4).limit(3).collect(Collectors.toList());
+    for (Integer integer : LiitedNumber) {
+      System.out.print(integer+" ");
     }
+  }
 }

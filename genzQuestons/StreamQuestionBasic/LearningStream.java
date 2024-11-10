@@ -119,11 +119,14 @@ public class LearningStream {
     studentList.add(new Student(2, "Abhishek", 27));
     studentList.add(new Student(3, "Rohit", 30));
     studentList.add(new Student(4, "Prakash", 29));
-
     System.out.println("Learning Group by Operation");
-    Map<Integer, List<Student>> groupStudentByAge =studentList.stream().collect(Collectors.groupingBy(Student::getAge));
+    Map<Integer, List<Student>> groupStudentByAge =studentList.stream().collect
+    (Collectors.groupingBy(Student::getAge));
     System.out.println(groupStudentByAge);
 
+    //Peek Elements:
+    System.out.println("Using Stream Peek Operation");
+    List<Integer> peekedAtNumbers=list3.stream().peek(System.out::println).collect(Collectors.toList());
 
     }
 }

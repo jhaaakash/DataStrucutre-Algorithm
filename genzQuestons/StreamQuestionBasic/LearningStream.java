@@ -2,6 +2,7 @@ package StreamQuestionBasic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -154,6 +155,10 @@ public class LearningStream {
    }
    System.out.println();
 
+   //Learning Summarizing Statistics
+   System.out.println("Learning Summarizing Statistics");
+   IntSummaryStatistics stats= list1.stream().mapToInt(Integer::intValue).summaryStatistics();
+   System.out.println(stats);
 
 
   }

@@ -126,7 +126,8 @@ public class LearningStream {
 
     //Peek Elements:peek element of the stream during processing without altering them
     System.out.println("Using Stream Peek Operation");
-    List<Integer> peekedAtNumbers=list3.stream().peek(System.out::println).collect(Collectors.toList());
+    List<Integer> peekedAtNumbers=list3.stream().peek(System.out::print).collect(Collectors.toList());
+    System.out.println();
 
     //Limit Stream
     System.out.println("Learning Stream Limit feature");
@@ -134,5 +135,16 @@ public class LearningStream {
     for (Integer integer : LiitedNumber) {
       System.out.print(integer+" ");
     }
+    System.out.println();
+
+    //Learning Skip in Stream
+    System.out.println("Learning Skip in Stream");
+    List<Integer> skippedNumber= list1.stream().filter(e -> e >4).skip(3).collect(Collectors.toList());
+    for (Integer integer : skippedNumber) {
+      System.out.print(integer+ " ");
+    }
+    System.out.println();
+
   }
 }
+

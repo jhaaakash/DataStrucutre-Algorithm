@@ -125,6 +125,11 @@ public class Employee  implements Comparable<Employee>{
 
         System.out.println("/n");
 
+        //Printing Employee detailsby age criteria
+        System.out.println("Printing Employee detail based upon age Criteria");
+        StreamOperationFunction objectforAllOperation= new StreamOperationFunction();
+        objectforAllOperation.streamOperationAgeByCriteria(empList);
+
 
 
 

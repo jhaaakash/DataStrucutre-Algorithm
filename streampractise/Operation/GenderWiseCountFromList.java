@@ -9,7 +9,6 @@ public class GenderWiseCountFromList {
         Map<String, Long> noOfMaleAndFemaleEmployees;
         noOfMaleAndFemaleEmployees= empList.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println("Count of male and female employees present in the organization:: \n" + noOfMaleAndFemaleEmployees);
-
     }
     /*
      * Count of male and female employees present in the organization::

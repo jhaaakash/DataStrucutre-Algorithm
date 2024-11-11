@@ -12,4 +12,11 @@ public class StreamOperationFunction {
        }
     }
 
+    public void streamOperationMaxEmployeeAge(List<Employee> empList)
+    {
+       int maxAgeofEmployee= empList.stream().mapToInt(Employee::getAge).max().getAsInt();
+       
+       System.out.println("Max age of employee is : " +maxAgeofEmployee);
+    }
+
 }

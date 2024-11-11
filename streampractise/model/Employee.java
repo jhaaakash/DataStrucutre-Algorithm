@@ -130,6 +130,9 @@ public class Employee  implements Comparable<Employee>{
         StreamOperationFunction objectforAllOperation= new StreamOperationFunction();
         objectforAllOperation.streamOperationAgeByCriteria(empList);
 
+        //Finding Maximum age of the employee
+        System.out.println("Printing maximum age of employee");
+        objectforAllOperation.streamOperationMaxEmployeeAge(empList);
 
 
 
@@ -139,7 +142,8 @@ public class Employee  implements Comparable<Employee>{
         //******************************Comparable vs Comparator********************************************* */
         //Learning Comparable vs Comparator
         //Comparable same class, and compareto method, +,-,0
-
+System.out.println();
+System.err.println();
       System.out.println("Soritng of element with the help of comparable");
         Collections.sort(empList);
         for (Employee employee : empList) {

@@ -119,6 +119,19 @@ public class Employee  implements Comparable<Employee>{
         GenderWiseCountFromList object2= new GenderWiseCountFromList();
         object2.countNumberOfMaleAndFemale(empList);
 
+        //Printing Nmae of all Department
+        StreamPrintingAllDepartment object3 = new StreamPrintingAllDepartment();
+        object3.streamPrintingAllDepartment(empList);
+
+        System.out.println("/n");
+
+
+
+
+
+
+
+        //******************************Comparable vs Comparator********************************************* */
         //Learning Comparable vs Comparator
         //Comparable same class, and compareto method, +,-,0
 

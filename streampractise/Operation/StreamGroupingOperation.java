@@ -7,6 +7,7 @@ public class StreamGroupingOperation {
         Map<String, List<Employee>> empByCity;
         empByCity= empList.stream().collect(Collectors.groupingBy(Employee::getCity));
         System.out.println("Employees grouped by city :: \n" + empByCity);
+
         /*
          * {Chennai=[Employee [id=3, name=efg, age=30, salary=115, gender=M, deptName=HR, city=Chennai, yearOfJoining=2014], 
 		  Employee [id=4, name=def, age=32, salary=125, gender=F, deptName=HR, city=Chennai, yearOfJoining=2013]],

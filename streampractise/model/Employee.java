@@ -134,7 +134,9 @@ public class Employee  implements Comparable<Employee>{
         System.out.println("Printing maximum age of employee");
         objectforAllOperation.streamOperationMaxEmployeeAge(empList);
 
-
+        //Printing Average Age of Male and Female Employees
+        System.out.println("Printing Average Age of Male and Female Employees");
+        objectforAllOperation.averageAgeforMaleAndFemale(empList);
 
 
 

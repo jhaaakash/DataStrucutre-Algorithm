@@ -29,8 +29,10 @@ public class StreamOperationFunction {
     }
 
    public void countOfEmployeeDeptWise(List<Employee> empList) {
-      // TODO Auto-generated method stub
-      throw new UnsupportedOperationException("Unimplemented method 'countOfEmployeeDeptWise'");
+     
+      Map<String,Long> emplDeptCountWise;
+      emplDeptCountWise=empList.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.counting()));
+      System.out.println(emplDeptCountWise);
    }
 
 }

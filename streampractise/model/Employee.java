@@ -138,7 +138,9 @@ public class Employee  implements Comparable<Employee>{
         System.out.println("Printing Average Age of Male and Female Employees");
         objectforAllOperation.averageAgeforMaleAndFemale(empList);
 
-
+        //Printing the Number of Employees in Each Department
+        System.out.println("Printing the Number of Employees in Each Department");
+        objectforAllOperation.countOfEmployeeDeptWise(empList);
 
 
         //******************************Comparable vs Comparator********************************************* */

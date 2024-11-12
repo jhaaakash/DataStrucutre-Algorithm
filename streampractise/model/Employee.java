@@ -142,6 +142,9 @@ public class Employee  implements Comparable<Employee>{
         System.out.println("Printing the Number of Employees in Each Department");
         objectforAllOperation.countOfEmployeeDeptWise(empList);
 
+        //Finding the Oldest Employee
+        System.out.println("The oldest emplyee is");
+        objectforAllOperation.fetchingOldestEmployee(empList);
 
         //******************************Comparable vs Comparator********************************************* */
         //Learning Comparable vs Comparator

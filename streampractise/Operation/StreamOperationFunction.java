@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collector;
@@ -33,6 +34,12 @@ public class StreamOperationFunction {
       Map<String,Long> emplDeptCountWise;
       emplDeptCountWise=empList.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.counting()));
       System.out.println(emplDeptCountWise);
+   }
+
+   //************************************************To Learn*************************************
+   public void fetchingOldestEmployee(List<Employee> empList) {
+    Employee maxAge = empList.stream().max(Comparator.comparing(Employee::getAge)).get();
+    System.out.println(maxAge+" the older ployee");
    }
 
 }

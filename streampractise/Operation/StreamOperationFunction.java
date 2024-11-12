@@ -28,4 +28,9 @@ public class StreamOperationFunction {
 
     }
 
+   public void countOfEmployeeDeptWise(List<Employee> empList) {
+      // TODO Auto-generated method stub
+      throw new UnsupportedOperationException("Unimplemented method 'countOfEmployeeDeptWise'");
+   }
+
 }

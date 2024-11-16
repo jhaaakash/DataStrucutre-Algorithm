@@ -42,4 +42,11 @@ public class StreamOperationFunction {
     System.out.println(maxAge+" the older ployee");
    }
 
+   public void fetchYoungestFemaleEmployee(List<Employee> empList) {
+      Employee youngestFemaleEmployee= empList.stream().filter(e -> e.getGender().equals("F")).min((o1, o2) ->(o1.getAge()-o2.getAge())).get();
+      System.out.println(youngestFemaleEmployee);
+   }
+
+
+
 }

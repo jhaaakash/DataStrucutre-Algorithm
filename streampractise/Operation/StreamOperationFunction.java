@@ -1,6 +1,7 @@
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -46,6 +47,22 @@ public class StreamOperationFunction {
       Employee youngestFemaleEmployee= empList.stream().filter(e -> e.getGender().equals("F")).min((o1, o2) ->(o1.getAge()-o2.getAge())).get();
       System.out.println(youngestFemaleEmployee);
    }
+
+   public void findingEmployeeByAgeRange(List<Employee> empList) {
+      System.out.println("Employees whose age is greater than 30 and less than 30");
+      Map<Boolean, List<Employee>> partitionEmployeesByAge = empList.stream().collect(Collectors.partitioningBy(e -> e.getAge()>30));
+      Set<Map.Entry<Boolean, List<Employee>>> empSet = partitionEmployeesByAge.entrySet();
+
+for (Map.Entry<Boolean, List<Employee>> entry : empSet) {
+ if (Boolean.TRUE.equals(entry.getKey())) {
+ // Employees greater than 30 years old
+ System.out.println("Employees greater than 30 years ::" + entry.getValue());
+ } else {
+ // Employees less than 30 years old
+ System.out.println("Employees less than 30 years ::" + entry.getValue());
+      }
+   }
+}
 
 
 

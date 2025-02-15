@@ -7,7 +7,6 @@ public class TripletwithZeroSum {
         int arr[] = { 0, -1, 2, -3, 1 };
         int size = arr.length;// 5
         int target = 0;
-
         
           //first approach
           for(int i=0;i<=size-3; i++)
@@ -23,7 +22,7 @@ public class TripletwithZeroSum {
           }
           }
           }
-          
+
         // Second Approach:
         printTriplets(arr,size);
         }

@@ -23,12 +23,10 @@ public class TripletwithZeroSum {
           }
           }
           }
-         
-
+          
         // Second Approach:
         printTriplets(arr,size);
         }
-
         
     static void printTriplets(int arr[], int n)
     {
@@ -54,4 +52,5 @@ public class TripletwithZeroSum {
             System.out.println("There is no triplet");
         }
     }
+
 }

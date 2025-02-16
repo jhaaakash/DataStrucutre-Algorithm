@@ -22,7 +22,6 @@ public class SeparatingKeyValueAndItsCount {
                                                                             )
                              )
                               );
-
       keyValue.forEach((key, value) -> System.out.println(key + " -> " + value));
                             }
 }

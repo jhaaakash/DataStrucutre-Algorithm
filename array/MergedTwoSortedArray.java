@@ -9,6 +9,7 @@ public class MergedTwoSortedArray {
                 for (int num : result) {
                     System.out.print(num + " ");
                 }
+
             }
         
      private static int[] mergeSortedArrays(int[] arr1, int[] arr2) {

@@ -17,21 +17,26 @@ public class MockMaximumDepthOfBinaryTree {
             right = null;
             next = null;
         }
-    }
-    
-
-    static int maximumDepthOfBinaryTree(TreeNode root) {
-           
         
-        return 0;
+                public static MockMaximumDepthOfBinaryTree.TreeNode readTreeReturnRoot(Scanner sc) {
+                    // TODO Auto-generated method stub
+                    throw new UnsupportedOperationException("Unimplemented method 'readTreeReturnRoot'");
+                }
+            }
+            
         
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
-        for (int test = 0; test < T; test++) {
-            TreeNode root = TreeNode.readTreeReturnRoot(sc);
+            static int maximumDepthOfBinaryTree(TreeNode root) {
+                   
+                
+                return 0;
+                
+            }
+        
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                int T = sc.nextInt();
+                for (int test = 0; test < T; test++) {
+                    TreeNode root = TreeNode.readTreeReturnRoot(sc);
             int result = maximumDepthOfBinaryTree(root);
             System.out.println(result);
         }

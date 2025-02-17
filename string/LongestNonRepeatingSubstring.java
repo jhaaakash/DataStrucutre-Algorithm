@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class LongestNonRepeatingSubstring {
     public static void main(String[] args) {
-        String str = "Aakash"; // Test string
+        String str = "anjalijha"; // Test string
         String result = longestNonRepeatingSubstring(str);
         System.out.println("Longest non-repeating substring length: " + result);
     }
